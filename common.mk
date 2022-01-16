@@ -86,6 +86,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdrm.vendor:64
 
+# DOZE
+PRODUCT_PACKAGES += \
+    SamsungDoze
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor:32 \
