@@ -254,6 +254,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libutils-v32
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.3-service.samsung
+
 # WiFi
 PRODUCT_PACKAGES += \
     WifiOverlay \
