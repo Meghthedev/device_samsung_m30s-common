@@ -233,6 +233,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor:64 \
     android.hardware.radio.deprecated@1.0.vendor:64
 
+# Ril
+PRODUCT_PACKAGES += \
+    secril_config_svc
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0.vendor:64 \
