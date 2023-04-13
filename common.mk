@@ -17,7 +17,7 @@
 COMMON_PATH := device/samsung/m30s-common
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/samsung/m307f-common/m30s-common-vendor.mk)
+$(call inherit-product, vendor/samsung/m30s-common/m30s-common-vendor.mk)
 
 
 # Audio
