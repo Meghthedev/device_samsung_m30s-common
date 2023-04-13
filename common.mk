@@ -14,12 +14,11 @@
 # limitations under the License.
 #
 
-COMMON_PATH := device/samsung/gta4xl-common
+COMMON_PATH := device/samsung/m30s-common
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/samsung/gta4xl-common/gta4xl-common-vendor.mk)
+$(call inherit-product, vendor/samsung/m307f-common/m30s-common-vendor.mk)
 
-PRODUCT_CHARACTERISTICS := tablet
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -83,17 +82,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdrm.vendor:64
 
-# Dynamic Partitions
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor:32 \
     android.hardware.drm-service.clearkey
-
-# fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
 
 # FastCharge
 PRODUCT_PACKAGES += \
@@ -111,7 +103,7 @@ PRODUCT_PACKAGES += \
 # Graphics
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := 400dpi
+PRODUCT_AAPT_PREF_CONFIG := 420dpi
 PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 # Health
@@ -141,7 +133,6 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/idc/sec_e-pen.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/sec_e-pen.idc \
     $(COMMON_PATH)/configs/keylayout/sec_touchscreen.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sec_touchscreen.kl
 
 # Keymaster
